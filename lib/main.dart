@@ -20,6 +20,13 @@ class Calculator extends StatefulWidget {
 }
 
 class _CalculatorState extends State<Calculator> {
+
+  Widget calcbutton(String btntxt, Color btncolor, Color txtcolor){
+    return Container(
+
+    )
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,7 +34,30 @@ class _CalculatorState extends State<Calculator> {
       appBar: AppBar(title: Text("Calculator"), backgroundColor: Colors.white, ),
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: 5),
-        child: Column(),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                Padding(padding: EdgeInsets.all(10.0),
+                child: Text('0',
+                  textAlign: TextAlign.end,
+                  style: TextStyle(color: Colors.white,
+                    fontSize: 100
+                    ),
+                  ),
+                )
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+
+              ],
+            )
+          ],
+        ),
       ),
     );
   }
