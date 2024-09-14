@@ -23,8 +23,8 @@ class _CalculatorState extends State<Calculator> {
 
   Widget calcbutton(String btntxt, Color btncolor, Color txtcolor){
     return Container(
-
-    )
+      child: ,
+    );
   }
 
   @override
@@ -53,7 +53,7 @@ class _CalculatorState extends State<Calculator> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-
+                  calcbutton("AC", Colors.grey, Colors.black)
               ],
             )
           ],
